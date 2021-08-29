@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="asset/css/style.css">
+    <title>Main Form</title>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h2>Registration Form</h2>
+            <p>Kindly Provide us the following Information</p>
+        </div>
+        <form class="form" id="form">
+
+            <h4>General Information</h4>
+
+            <!--single field-->
+            <div class="form-control">
+                <label>First Name</label>
+                <input type="text" placeholder="Jawad" id="firstname" >
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <!--/single field-->
+
+
+            <!--single field-->
+            <div class="form-control">
+                <label>Last Name</label>
+                <input type="text" placeholder="Amin" id="lastname">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <!--/single field-->
+
+
+            <!--single field-->
+            <div class="form-control">
+                <label>Father Name</label>
+                <input type="text" placeholder="Noor Ul Amin" id="fathername">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <!--/single field-->
+
+
+            <!--single field-->
+            <div class="form-control">
+                <label>Email</label>
+                <input type="email" placeholder="javad@gmail.com" id="email">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <!--/single field-->
+
+
+            
+            <!--single field-->
+            <div class="form-control">
+                <label>Phone</label>
+                <input type="number" placeholder="0923045767720" id="phone">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <!--/single field-->
+
+
+            <!--single field-->
+            <div class="form-control">
+                <label>Date Of Birth</label>
+                <input type="date"  id="firstname">
+            </div>
+            <!--/single field-->
+
+            
+            <h4>Educational Information</h4>
+            <h5>HSSC or Equivalent Marks</h5>
+
+            <!--single field-->
+            <div class="form-control">
+   
+                <label>Total Marks</label>
+                <input type="number" placeholder="eg: 1100" id="totalmarksHSSC"><br>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="issueHSSCandSSCerror">Error Message</small>
+            </div>
+            <!--/single field-->
+
+
+            <!--single field-->
+            <div class="form-control">
+                <label>Obtained Marks</label>
+                <input type="number" placeholder="eg: 921" id="obtmarksHSSC">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <!--/single field-->
+
+            <!-- single field-->
+            <div class="form-control">
+                <button class="percentbtn" id="HSSCbtn">Calc Percentage</button>
+                <div id="hsscLabel">
+                    00
+                </div>
+            </div>
+            <!--/single field-->
+
+            <h5>SSC or Equivalent Marks</h5>
+
+            <!-- single field-->
+            <div class="form-control">
+                <label>Total Marks</label>
+                <input type="number" placeholder="eg: 1100" id="totalmarksSSC"><br>
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small id="issueHSSCandSSCerror">Error Message</small>
+            </div>
+            <!--/ single field-->
+
+            <!-- single field-->
+            <div class="form-control">
+                <label>Obtained Marks</label>
+                <input type="number" placeholder="eg: 921" id="obtmarksSSC">
+                <i class="fas fa-check-circle"></i>
+                <i class="fas fa-exclamation-circle"></i>
+                <small>Error Message</small>
+            </div>
+            <!--/ single field-->
+
+            <!-- single field-->
+            <div class="form-control">
+                <button class="percentbtn" id="SSCbtn">Calc Percentage</button>
+                <div id="sscLabel">
+                    00
+                </div>
+            </div>
+            <!--/single field-->
+
+            <!-- single field-->
+            <div class="form-control">
+                <label>Choose Your Preffered schedule</label>
+                <select id="schedule">
+                    <option>Morning</option>
+                    <option>Evening</option>
+                </select>
+            </div>
+             <!-- single field-->
+
+            <button class="percentbtn" type="submit">Check Validity</button>
+        </form> 
+        
+    <div class="registerbtn"> 
+        <button id="register" type="submit">Register</button>
+    </div>
+    </div>
+
+</body>
+
+
+<script src="https://kit.fontawesome.com/454f52ee4f.js" crossorigin="anonymous"></script>
+<script src="./app.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</html>
+
